@@ -8,7 +8,7 @@
     <link href="assets/logo.png" rel="icon" />
     <script src="src/scripts.js"></script>
   </head>
-  <body>
+  <body class="m-3">
     <!--
       Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
 
@@ -42,5 +42,20 @@
 
         Second example: instead of adding a number to each col, let bootstrap handle the layout, to create equal width columns: two "col" elements = 50% width to each col, while three cols = 33.33% width to each col. Four cols = 25% width, etc. You can also use .col-sm|md|lg|xl|xxl to make the columns responsive.
         -->
+
+        <!-- THREE EQUAL COLUMNS-->
+        <div class="row">
+          <div class="col bg-primary text-white p-3">.col</div>
+          <div class="col bg-black text-white p-3">.col</div>
+          <div class="col bg-primary text-white p-3">.col</div>
+        </div>
+
+        <!-- RESPONSIVE COLUMNS -->
+        <div class="row mt-5">
+          <div class="col-sm-3 bg-primary text-white p-3">.col</div>
+          <div class="col-sm-3 bg-black text-white p-3">.col</div>
+          <div class="col-sm-3 bg-primary text-white p-3">.col</div>
+          <div class="col-sm-3 bg-black text-white p-3">.col</div>
+        </div>
   </body>
 </html>
