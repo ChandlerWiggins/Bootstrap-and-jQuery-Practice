@@ -9,7 +9,6 @@
     <script src="src/scripts.js"></script>
   </head>
   <body>
-
     <!--
       Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
 
@@ -20,5 +19,28 @@
       Make sure that the sum adds up to 12 or fewer (it is not required )
     -->
 
+    <!-- Control the column width, and how they should appear on different 
+      
+      <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+      </div>
+        <div class="row">
+          <div class="col-*-*"></div>
+          <div class="col-*-*"></div>
+          <div class="col-*-*"></div>
+        </div>
+    
+      Or let Bootstrap automatically handle the layout
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+
+        First example: create a row (<div class="row">). Then, add the desired number of columns (tags with appropriate .col-*-* classes). The first star (*) represents the responsiveness: sm, md, lg, xl or xxl, while the second star represents a number, which should add up to 12 for each row.
+
+        Second example: instead of adding a number to each col, let bootstrap handle the layout, to create equal width columns: two "col" elements = 50% width to each col, while three cols = 33.33% width to each col. Four cols = 25% width, etc. You can also use .col-sm|md|lg|xl|xxl to make the columns responsive.
+        -->
   </body>
 </html>
